@@ -1,0 +1,279 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#cabecalho {
+    background-color: #d45d91;
+    color: #FFF;
+}
+#cabecalho a {
+    color: #FFF;
+}
+header, footer, section {
+    padding: 40px 0;
+
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #ff69b4; /* Rosa */
+}
+
+h1 {
+    color: #f9f9f9;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ff69b4; /* Rosa */
+}
+
+ul {
+    list-style: none;
+}
+
+/* Estilos do Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+/* Estilos do Section */
+section {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#produtos button {
+    margin-top: 20px;
+}
+#produtos h2 {
+    margin-right: 400px;
+}
+#produtos {
+    display: block;
+    margin-left: 300px;
+}
+.produto-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.produto {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.produto img {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Corta a imagem para caber no espaço definido */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    font-size: 20px;
+    color: #ff69b4; /* Rosa */
+}
+
+.produto p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.produto form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto label {
+    margin-right: 10px;
+    color: #ff69b4; /* Rosa */
+}
+
+.produto select {
+    margin-right: 10px;
+    padding: 8px;
+}
+
+.produto button {
+    padding: 8px 20px;
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #d45d91; /* Rosa mais escuro */
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos do Formulário de Contato */
+#form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#form-contato label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#form-contato input, #form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-contato textarea {
+    height: 150px;
+}
+
+#form-contato button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form-contato button:hover {
+    background-color: #d45d91; /* Rosa mais escuro */
+}
+
+/* Estilo para melhor organização do formulário */
+#form-contato .form-group {
+    margin-bottom: 20px;
+}
+
+#form-contato .form-group label {
+    margin-bottom: 5px;
+}
+
+#form-contato .form-group input, #form-contato .form-group textarea {
+    margin-bottom: 10px;
+}
+
+/* Estilos do Formulário de Adicionar Produto */
+#form-adicionar-produto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#sobre {
+    background-color: #d45d91;
+    font-size: 20px;
+}
+#sobre h2 {
+    color: #FFF;
+}
+#sobre p {
+    color: #FFF;
+    margin: 50px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#form-adicionar-produto label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#form-adicionar-produto input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-adicionar-produto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-adicionar-produto:hover {
+    background-color: #d45d91; /* Rosa mais escuro */
+}
